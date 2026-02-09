@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "cp games.json dist/games.json || true && cp -r ../mobileapp.poki2.online/icons dist/icons || true",
     "preview": "vite preview --port 4173"
   },
   "devDependencies": {
-    "vite": "^5.0.0"
+    "vite": "^5.0.0",
+    "wrangler": "^4.63.0"
   }
 }
